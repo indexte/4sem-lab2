@@ -15,7 +15,7 @@ List<int> _data;
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
     qsrand(time(0));
-    for (int i = 0; i < 3900; i++)  //random number generation (unsigned short int)
+    for (int i = 0; i < 1000; i++)  //random number generation (unsigned short int)
         _data.add(qrand());
     ui->output->clear();
     for(auto tmp_data : _data.Show())
@@ -29,13 +29,13 @@ void MainWindow::on_Insertion_sort_clicked(){
     auto tmp = _data.Show();
     unsigned start_time =  clock();
     my_sort(tmp);
-    unsigned end_time = clock();
     _data.clear();
     for(auto a:tmp)
         _data.add(a);
-    ui->time->setText("time = " + QString::number(end_time - start_time) + "ms");
     for(auto tmp_data : _data.Show())
         ui->output->append(QString::number(tmp_data));
+    unsigned end_time = clock();
+    ui->time->setText("time = " + QString::number(end_time - start_time) + "ms");
 }
 
 void MainWindow::on_Quicksort_clicked(){
@@ -44,13 +44,13 @@ void MainWindow::on_Quicksort_clicked(){
     auto tmp = _data.Show();
     unsigned start_time =  clock();
     my_sort(tmp);
-    unsigned end_time = clock();
     _data.clear();
     for(auto a:tmp)
         _data.add(a);
-    ui->time->setText("time = " + QString::number(end_time - start_time) + "ms");
     for(auto tmp_data : _data.Show())
         ui->output->append(QString::number(tmp_data));
+    unsigned end_time = clock();
+    ui->time->setText("time = " + QString::number(end_time - start_time) + "ms");
 }
 
 void MainWindow::on_Heap_sort_clicked(){
@@ -59,13 +59,13 @@ void MainWindow::on_Heap_sort_clicked(){
     auto tmp = _data.Show();
     unsigned start_time =  clock();
     my_sort(tmp);
-    unsigned end_time = clock();
     _data.clear();
     for(auto a:tmp)
         _data.add(a);
-    ui->time->setText("time = " + QString::number(end_time - start_time) + "ms");
     for(auto tmp_data : _data.Show())
         ui->output->append(QString::number(tmp_data));
+    unsigned end_time = clock();
+    ui->time->setText("time = " + QString::number(end_time - start_time) + "ms");
 }
 
 void MainWindow::on_Save_clicked(){
