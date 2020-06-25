@@ -1,3 +1,9 @@
+/**
+ * @file tests.h
+ *
+ * @brief This file contains the implementation of unit tests.
+ */
+
 #ifndef TESTS_H
 #define TESTS_H
 #include "sort_algorithms.h"

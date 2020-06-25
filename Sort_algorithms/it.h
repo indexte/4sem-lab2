@@ -1,7 +1,12 @@
+/**
+ * @file it.h
+ *
+ * @brief This file describe the Iterator pattern.
+ */
+
 #ifndef IT_H
 #define IT_H
 
-//iterator pattern
 template<class T>
 class it
 {

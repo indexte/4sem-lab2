@@ -1,3 +1,9 @@
+/**
+ * @file mainwindow.h
+ *
+ * @brief This file contains processing of various use cases of the program.
+ */
+
 #pragma once
 
 #include <QMainWindow>

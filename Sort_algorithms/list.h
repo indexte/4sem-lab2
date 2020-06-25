@@ -1,3 +1,9 @@
+/**
+ * @file list.h
+ *
+ * @brief This file describe the List class for storage temporary data.
+ */
+
 #ifndef LIST_H
 #define LIST_H
 #include <QVector>

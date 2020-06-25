@@ -1,3 +1,9 @@
+/**
+ * @file sort.h
+ *
+ * @brief This file describe the Strategy pattern.
+ */
+
 #ifndef SORT_H
 #define SORT_H
 #include <QVector>

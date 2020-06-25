@@ -1,3 +1,11 @@
+/**
+ * @file sort_algorithms.h
+ *
+ * @brief This file contains the implementation of different types of sorts.
+ *
+ * Three types of sorts are implemented: insertion sort, quick sort and heap sort.
+ */
+
 #ifndef SORT_ALGORITHMS_H
 #define SORT_ALGORITHMS_H
 #include <iostream>

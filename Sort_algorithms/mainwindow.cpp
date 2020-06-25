@@ -1,3 +1,7 @@
+/**
+ * @file mainwindow.cpp
+ */
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "it.h"
@@ -10,12 +14,13 @@
 #include <QMessageBox>
 
 Sort<int> my_sort;
-List<int> _data;
+
+List<int> _data;    ///< List for storing current data
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow){
     ui->setupUi(this);
     qsrand(time(0));
-    for (int i = 0; i < 1000; i++)  //random number generation (unsigned short int)
+    for (int i = 0; i < 1000; i++)  //random number generation
         _data.add(qrand());
     ui->output->clear();
     for(auto tmp_data : _data.Show())
